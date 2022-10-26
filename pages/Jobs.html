@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoostRoom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header class="container-fluid d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-light p-3" id="menu">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span class="fs-5 text-primary fw-bold"><img src="../img/EloBoostRoom 2.png" alt=""></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./games.html">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container w-50 m-auto text-center" id="equipo">
+                <h1 class="mb-5 fs-2">Team <span class="text-primary">BoostRoom</span>.</h1>
+                <p class="fs-4 ">Siempre buscamos las personas adecuadas para que trabajen con nosotros. Si te sientes
+                    listo
+                    para
+                    este reto, te esperamos para que te unas a nosotros.</p>
+            </div>
+            <div id="local" class="border-top border-2">
+                <div class="mapa"></div>
+                <div>
+                    <div class="wrapper-local">
+                        <h2>Ubicado en San Miguel de Tucuman, Argentina</h2>
+                        <h2 class="text-primary mb-4" id="typewriter"></h2>
+                        <p class="fs-5 text-body">Elijimos Tucuman para nuestra oficina con el objetivo de estar cerca a
+                            nuestros
+                            clientes. Estamos ubicados en 25 de mayo, el corazon y el centro financiero de Tucuman,
+                            cerca de
+                            los
+                            mejores
+                            restaurantes, tiendas. ¡Visitennos!
+                        </p>
+                        <section class="d-flex justify-content-start" id="numeros-local">
+                            <div>
+                                <p class="text-primary fs-5">200</p>
+                                <p>Dias de Sol</p>
+                            </div>
+                            <div>
+                                <p class="text-primary fs-5">100%</p>
+                                <p>Aprobado</p>
+                            </div>
+                            <div>
+                                <p class="text-primary fs-5">64 °C</p>
+                                <p>Temperatura (posta)</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="seccion-contacto" class="border-bottom border-secondary border-2">
+            <div id="bg-contactos">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#1b2a4e" fill-opacity="1"
+                        d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="container  border-top border-primary " style="max-width: 500px" id="contenedor-formulario">
+                <div class="text-center mb-4" id="titulo-formulario">
+                    <div><img src="./img/support.png" alt="" class="img-fluid ps-5"></div>
+                    <h2>Contactanos</h2>
+                    <p class="fs-5">Estamos aqui para hacer realidad de tus proyectos</p>
+                </div>
+
+
+
+                <form method="POST" data-netlify="true" action="#">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="nombre@ejemplo.com">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <input type="input" class="form-control" id="name" name="name" placeholder="Name">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="Videojuego Main">
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea class="form-control" name="message" id="message" rows="4"
+                            placeholder="Un poco acerca de ti"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class=" btn btn-primary w-100 fs-5">Enviar Mensaje</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3  pt-3"><img src="../img/EloBoostRoom 2.png" alt="" width="100" height="100"> &copy; Todos Los
+            Derechos Reservados 2022</p>
+        <div id="iconos">
+            <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+            <a href="https://telegram.org"><i class="bi bi-telegram"></i></a>
+            <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

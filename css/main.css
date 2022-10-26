@@ -1,0 +1,386 @@
+/*===============Propiedades Globales================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    margin: 0px 0px;
+}
+
+
+/*===================MENU==========================*/
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    background-color: #1b2a4e;
+}
+
+#menu a,
+button {
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+#menu a {
+    color: #ffffff;
+}
+
+#menu a:hover {
+    color: #f80101;
+}
+
+main {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+/*===================SLIDER DE IMAGENES==========================*/
+
+.carousel-inner {
+    max-height: 20rem !important;
+}
+
+/*===================SECCION Services==========================*/
+
+.contenedor-services {
+    display: grid;
+
+    grid-template-columns: 20% 75%;
+    grid-template-rows: 1fr;
+
+    gap: 10px;
+}
+
+.barra_izquierda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra_izquierda img {
+    width: 30%;
+}
+
+
+.galeria_de_juegos {
+    background-color: rgb(62, 78, 150);
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    padding: 8%;
+    gap: 20px;
+}
+
+.galeria_de_juegos img {
+    width: 30%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0, 2);
+    overflow: hidden;
+    transition: all 0.25s;
+}
+
+.galeria_de_juegos img:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0, 2);
+}
+
+/*===================SECCION Jobs==========================*/
+#local {
+    margin-top: 50px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 300px;
+}
+
+.mapa {
+    background: url(../img/mapa.png);
+    width: 100%;
+    height: 500px;
+}
+
+
+.wrapper-local {
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+
+/*===========================SECCION Jobs==================================*/
+
+
+#numeros-local div {
+    padding: 0 20px 0 0;
+    text-align: left;
+    height: 48px;
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child) {
+    padding-left: 20px;
+}
+
+#numeros-local p {
+    margin: 0;
+}
+
+/*=========================CONTACTOS JOBS BACKGROUND================================*/
+
+#bg-contactos {
+    position: relative;
+    top: -130px;
+}
+
+#seccion-contacto {
+    background-color: #1b2a4e;
+    min-height: 500px;
+    position: relative;
+}
+
+/*=========================CONTACTOS FORMULARIO PARA JOBS================================*/
+
+#contenedor-formulario {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius: 5px;
+
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+/*=========================SECCION CONTACTOS================================*/
+
+
+#contactos-fila-2 a{
+    width: 100% !important;
+    text-decoration: none;
+    color: white;
+    background-color: #1b2a4e;
+    padding: 10px;
+    padding-left: 35%;
+    border-radius: 100px;
+    transition: all 1s;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+#contactos-fila-2 a:hover {
+    background-color: aqua;
+}
+
+#contactos-fila-1 a {
+    width: 100% !important;
+    text-decoration: none;
+    color: white;
+    background-color: #1b2a4e;
+    padding: 10px;
+    padding-left: 35%;
+    border-radius: 100px;
+    transition: all 1s;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+
+#contactos-fila-1 a:hover {
+    background-color: aqua;
+}
+
+/*=========================FOOTER================================*/
+
+footer{
+    background: #1b2a4e;
+    min-height: 100px;
+    ;
+}
+
+footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px) {
+
+    #intro,
+    #equipo {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    #local {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+}
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #equipo {
+        width: 90% !important;
+        margin: auto;
+    }
+
+
+    #img-equipo {
+        max-height: 20rem !important;
+        width: 90%;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    #local {
+        flex-wrap: wrap;
+    }
+
+    .mapa img {
+        width: 100%;
+        height: auto;
+    }
+
+    #bg-contactos {
+        top: -120px;
+    }
+
+    .galeria_de_juegos img {
+        width: 45%;
+    }
+
+    .card {
+        height: 5px;
+    }
+}
+
+
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width: 100% !important;
+    }
+
+    #servicios-fila-1 {
+        width: 100% !important;
+    }
+
+    .icono-wrap {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    .contenedor-services {
+        display: grid;
+
+        grid-template-columns: 100%;
+        grid-template-rows: 2fr;
+
+        grid-template-areas: "pos1"
+            "pos2";
+    }
+
+    .galeria_de_juegos {
+        grid-area: pos1;
+        justify-content: center;
+    }
+
+    .barra_izquierda {
+        grid-area: pos2;
+    }
+
+    .barra_izquierda img {
+        align-items: center;
+    }
+
+    .galeria_de_juegos img {
+        width: 80%;
+    }
+
+    .barra_izquierda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barra_izquierda img {
+        width: 15%;
+    }
+
+    .card {
+        height: 4px;
+    }
+
+    .galeria_de_juegos {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+        padding-left: 100px;
+        gap: 20px;
+
+    }
+
+    #contactos-fila-2 a{
+        width: 100% !important;
+        text-decoration: none;
+        color: white;
+        background-color: #1b2a4e;
+        padding: 10px;
+        padding-left: 35%;
+        border-radius: 100px;
+        transition: all 1s;
+        display: flex;
+        color: rgb(255, 255, 255);
+    }
+
+    #contactos-fila-1 a {
+        width: 100% !important;
+        text-decoration: none;
+        color: white;
+        background-color: #1b2a4e;
+        padding: 10px;
+        padding-left: 35%;
+        border-radius: 100px;
+        transition: all 1s;
+        display: flex;
+        color: rgb(255, 255, 255);
+    }
+
+}
