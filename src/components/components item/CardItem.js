@@ -1,22 +1,33 @@
-import Image from "./image";
+import Image from "./Image";
 import "../../styles/cardItem.css"
 import Description from "./Description";
 import ButtonDetalles from "./Buttondetalles";
-import ButtonAddCart from "./ButtonAddCart";
+import ButttonAddCart from "./ButtonAddCart";
+import { Link } from "react-router-dom";
+import cart from "../../img/cart-white.png"
 
 const CardItem = (props) => {
     return(
         <div className="cardItem">
-            <Image Image={props.imagen}
+            <Image 
+                imagen={props.imagen}
                 />
             <Description 
-            title={props.title}
-            cantidad = {props.cantidad}
-            precio = {props.precio}
-            />
+                title= {props.title}
+                cantidad = {props.cantidad}
+                precio={props.precio}
+                />
             <div className="buttons">
-                <ButtonDetalles />
-                <ButtonAddCart />
+                <Link to={ `/item/${props.id}`}>
+                    <ButtonDetalles 
+                        txt="Ver detalles" 
+                    />
+                </Link>
+
+                <ButttonAddCart 
+                    id={props.id}
+                    svg={cart}
+                />
             </div>
         </div>
     )

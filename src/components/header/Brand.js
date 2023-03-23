@@ -1,8 +1,11 @@
 import brand from "../../img/brand.png";
+import { Link } from "react-router-dom"
 
-const Brand = () =>{
+const Brand = () => {
     return(
-        <img src={brand} alt="Tienda Novika" title="Tienda Novika"></img>
+        <Link to="/">
+            <img src={brand} alt="Tienda Novika" title="Tienda Novika"></img>
+        </Link>
     )
 }
 

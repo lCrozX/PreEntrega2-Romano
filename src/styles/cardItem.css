@@ -6,7 +6,7 @@
 
 .cardItem{
     height: 403px;
-    width: 260px;
+    width: 280px;
     padding: 10px;
     margin: 20px;
     display: flex;
@@ -20,10 +20,11 @@
     height: 60%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .cardItem .cardImg img{
-    width: 80%;
+    transform: scale(0.7);
 }
 
 /* desciption */

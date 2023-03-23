@@ -1,5 +1,5 @@
 const productos = [
-//placas de video
+    //placas de video
     {
         id: 1,
         title: "Placa De Video ASUS Rog Strix 3070ti",
